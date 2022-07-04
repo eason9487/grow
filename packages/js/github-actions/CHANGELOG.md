@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-07-04 (1.0.1)
+### Documentation 📚
+* Title with `backtick` and 'single' quote. Other special chars: ! @ $NO_VAR ${NO_VAR} $(no command) "double quotes". (https://github.com/eason9487/grow/pull/1)
+
 ## 2022-06-23 (1.0.0)
 ### New Features 🎉
 * Add custom GitHub actions for reuse across repositories. (https://github.com/woocommerce/grow/pull/11)
