@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-04-22 (1.11.1)
+### Breaking Changes 🚨
+* Test: Upgrade the base of the package `github-actions` to use Node.js v20. (https://github.com/eason9487/grow/pull/11)
+
 ## 2024-02-06 (1.11.1)
 ### Bug Fixes 🐛
 * Rename `add/qit-workflows-test-build` to `actions-v1` branch. (https://github.com/woocommerce/grow/pull/96)
