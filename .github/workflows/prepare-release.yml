@@ -1,0 +1,38 @@
+name: Prepare new release
+run-name: Prepare New Release `${{ github.event.inputs.type }}/${{ github.event.inputs.version }}` from by @${{ github.actor }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number to be released'
+        required: true
+      type:
+        description: 'Type of the release (release|hotfix)'
+        required: true
+        default: 'release'
+      wp-version:
+        description: 'WordPress tested up to'
+      wc-version:
+        description: 'WooCommerce tested up to'
+
+jobs:
+  PrepareRelease:
+    name: Prepare Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create branch & PR
+        uses: woocommerce/grow/prepare-extension-release@fix/avoid-actions-malicious-input-test-build
+        with:
+          version: ${{ github.event.inputs.version }}
+          type: ${{ github.event.inputs.type }}
+          wp-version: ${{ github.event.inputs.wp-version }}
+          wc-version: ${{ github.event.inputs.wc-version }}
+          main-branch: 'trunk'
+          pre-steps: |
+            1. [ ] Does this pre-step appear?
+          post-steps: |
+            1. [ ] Does this post-step appear?
