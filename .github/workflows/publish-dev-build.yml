@@ -1,0 +1,29 @@
+name: Publish dev build to GitHub
+
+on:
+  push:
+    branches:
+      - develop
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  BuildZip:
+    name: Build zip bundle
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build production bundle
+        run: |
+          zip readme.zip README.md
+
+      - name: Publish dev build to GitHub
+        uses: woocommerce/grow/publish-extension-dev-build@update/108-nodejs-v20-github-actions-release-related-test-build
+        with:
+          extension-asset-path: google-listings-and-ads.zip
+          tag-name: test-gha-dev-build
+          release-title: Test the publish-extension-dev-build action
