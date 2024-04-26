@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-04-26 (1.11.3)
+### Tweaked 🔧
+* Test: Adjust the v1 of the `github-actions` package to be deprecated. (https://github.com/eason9487/grow/pull/30)
+
 ## 2024-04-25 (1.11.2)
 ### Tweaked 🔧
 * Add PHP linter and PHP linting in GitHub Actions. (https://github.com/woocommerce/grow/pull/109)
