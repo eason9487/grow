@@ -1,7 +1,5 @@
 # Custom GitHub actions
 
-[![GitHub Actions - Release](https://github.com/woocommerce/grow/actions/workflows/github-actions-release.yml/badge.svg)](https://github.com/woocommerce/grow/actions/workflows/github-actions-release.yml)
-
 Custom GitHub actions that help to composite GitHub workflows across the repos maintained by the Grow Team.
 
 ## Actions list
