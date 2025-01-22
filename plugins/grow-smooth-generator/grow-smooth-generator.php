@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Grow Smooth Generator
  * Description: A smooth generator for Grow extension data.
- * Version: 0.1.1
+ * Version: 0.1.2
  * Author: Grow
  * Author URI: https://woogrowp2.wordpress.com
  *
