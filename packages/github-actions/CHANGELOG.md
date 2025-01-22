@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-01-22 (2.2.1)
+### Tweaked 🔧
+* Bump undici from 5.28.4 to 5.28.5 in /packages/github-actions. (https://github.com/woocommerce/grow/pull/154)
+
 ## 2024-07-26 (2.2.0)
 ### Updated ✨
 * Add release confirmation step to extension release PR. (https://github.com/woocommerce/grow/pull/141)
