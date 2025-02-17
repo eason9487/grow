@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-02-17 (2.2.1)
+### Tweaked 🔧
+* Test: Recreate package-lock in the `github-actions` package to resolve some vulnerabilities of npm packages. (https://github.com/eason9487/grow/pull/36)
+
 ## 2025-01-22 (2.2.1)
 ### Tweaked 🔧
 * Bump undici from 5.28.4 to 5.28.5 in /packages/github-actions. (https://github.com/woocommerce/grow/pull/154)
